@@ -38,3 +38,19 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bundler'
+
+gem 'validates_formatting_of'
+gem 'tzinfo-data'
+gem 'binding_of_caller'
+gem 'bootstrap-sass', '3.3.5'
+gem 'bootstrap-sass-extras'
+gem 'simple_form'
+
+group :development do
+  gem 'better_errors'
+end
+
+group :development, :test do
+  gem 'dotenv-rails'
+end
