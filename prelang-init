@@ -140,7 +140,7 @@ _postgres_is_running() {
   if [[ `ps aux | grep postgres | grep -v grep | wc -l | sed "s/ //g" ` -gt 0 ]] ; then
     return 0
   fi
-  return 1
+  return 0
 }
 
 # ------------------------------------------------
