@@ -52,6 +52,8 @@ gem 'nokogiri', '1.6.7.rc3' # , :platforms => [:mswin, :mingw, :x64_mingw]
 gem 'slim-rails'
 gem 'clearance'
 
+gem 'spork'
+
 group :development do
   gem 'better_errors'
 end
