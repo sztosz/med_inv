@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org/'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -12,7 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer', :platform => :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -47,12 +48,25 @@ gem 'bootstrap-sass', '3.3.5'
 gem 'bootstrap-sass-extras'
 gem 'simple_form'
 
+gem 'nokogiri', '1.6.7.rc3' # , :platforms => [:mswin, :mingw, :x64_mingw]
+gem 'haml-rails'
+
 group :development do
   gem 'better_errors'
 end
+
 
 group :development, :test do
   gem 'dotenv-rails'
 end
 
-gem 'nokogiri', '1.6.7.rc3', :platforms => [:mswin, :mingw]
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
