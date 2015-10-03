@@ -3,7 +3,8 @@ class CreateExaminations < ActiveRecord::Migration
     create_table :examinations do |t|
       t.string :patient
       t.datetime :date
-      t.references :examination_list, index: true
+      t.references :examinations_lists, index: true
+      t.references :examination_types, index: true
 
       t.timestamps
     end

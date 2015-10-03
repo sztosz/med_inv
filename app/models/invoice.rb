@@ -1,4 +1,5 @@
 class Invoice < ActiveRecord::Base
   has_one :contractor
-  has_many :examination_lists
+  has_many :examinations_lists
+  belongs_to :user
 end

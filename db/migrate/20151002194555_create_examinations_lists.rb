@@ -1,6 +1,6 @@
-class CreateExaminationLists < ActiveRecord::Migration
+class CreateExaminationsLists < ActiveRecord::Migration
   def change
-    create_table :examination_lists do |t|
+    create_table :examinations_lists do |t|
       t.integer :month
       t.integer :year
       t.references :invoice, index: true

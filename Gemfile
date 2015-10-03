@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.9'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -49,7 +49,8 @@ gem 'bootstrap-sass-extras'
 gem 'simple_form'
 
 gem 'nokogiri', '1.6.7.rc3' # , :platforms => [:mswin, :mingw, :x64_mingw]
-gem 'haml-rails'
+gem 'slim-rails'
+gem 'clearance'
 
 group :development do
   gem 'better_errors'
@@ -58,6 +59,10 @@ end
 
 group :development, :test do
   gem 'dotenv-rails'
+end
+
+group :development do
+  gem 'rails_apps_testing'
 end
 
 group :development, :test do
