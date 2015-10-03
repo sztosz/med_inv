@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :invoices
+
+  get 'landings/index'
+
+  resource :landings, only: [:new]
+
+  # CLEARANCE RESOURCES - BEGIN
+
   resources :passwords, controller: 'clearance/passwords', only: [:create, :new]
   resource :session, controller: 'clearance/sessions', only: [:create]
 
@@ -10,9 +18,7 @@ Rails.application.routes.draw do
   delete '/sign_out' => 'clearance/sessions#destroy', as: 'sign_out'
   get '/sign_up' => 'clearance/users#new', as: 'sign_up'
 
-  get 'landings/index'
-
-  resource :landings, only: [:new]
+  # CLEARANCE RESOURCES - END
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
