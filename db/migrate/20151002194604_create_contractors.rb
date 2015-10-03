@@ -5,7 +5,7 @@ class CreateContractors < ActiveRecord::Migration
       t.string :street
       t.string :zip_code
       t.string :city
-      t.text :nip
+      t.integer :nip
 
       t.timestamps
     end

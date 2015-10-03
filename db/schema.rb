@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20151003105146) do
     t.string   "street"
     t.string   "zip_code"
     t.string   "city"
-    t.text     "nip"
+    t.integer  "nip"
     t.integer  "invoice_id"
     t.datetime "created_at"
     t.datetime "updated_at"
