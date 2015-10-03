@@ -6,7 +6,6 @@ class CreateContractors < ActiveRecord::Migration
       t.string :zip_code
       t.string :city
       t.text :nip
-      t.references :invoice, index: true
 
       t.timestamps
     end
