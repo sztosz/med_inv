@@ -68,6 +68,7 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'faker'
 end
 group :test do
   gem 'capybara'
