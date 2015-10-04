@@ -5,7 +5,7 @@ class CreateContractors < ActiveRecord::Migration
       t.string :street
       t.string :zip_code
       t.string :city
-      t.integer :nip
+      t.integer :nip, limit: 8
 
       t.timestamps
     end
